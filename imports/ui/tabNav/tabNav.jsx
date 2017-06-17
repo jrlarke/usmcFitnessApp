@@ -8,6 +8,7 @@ import People from 'material-ui/svg-icons/social/people'
 import DateRange from 'material-ui/svg-icons/action/date-range'
 import Equalizer from 'material-ui/svg-icons/av/equalizer'
 import Dashboard from 'material-ui/svg-icons/action/dashboard'
+import BeenHere from 'material-ui/svg-icons/maps/beenhere'
 import FormatListNumbered from 'material-ui/svg-icons/editor/format-list-numbered'
 import GeneralState from '../general/state'
 
@@ -62,15 +63,15 @@ const TabNav = ({selected}) => {
                         style={selected == 1 ? tabStyle.selectedBox : tabStyle.box}>
                     </BottomNavigationItem>
                     <BottomNavigationItem
-                        icon={<People/>}
-                        label="Contact Us"
+                        icon={<BeenHere/>}
+                        label="My Plans"
                         onTouchTap={()=>{GeneralState.changeTab(2)}}
                         iconStyle={selected == 2 ? tabStyle.selectedIcon : tabStyle.icon}
                         style={selected == 2 ? tabStyle.selectedBox : tabStyle.box}>
                     </BottomNavigationItem>
                     <BottomNavigationItem
                         icon={<Equalizer/>}
-                        label="Logout"
+                        label="Profile"
                         onTouchTap={()=>{GeneralState.changeTab(3)}}
                         iconStyle={selected == 3 ? tabStyle.selectedIcon : tabStyle.icon}
                         style={selected == 3 ? tabStyle.selectedBox : tabStyle.box}>

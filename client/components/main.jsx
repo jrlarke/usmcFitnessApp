@@ -10,10 +10,11 @@ import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import GeneralState from '../../imports/ui/general/state'
 import LoginState from '../../imports/ui/login/client/state'
 import Login from '../../imports/ui/login/login';
-import HandleLogout from '../../imports/ui/logout/logout';
 import ContactUsForm from '../../imports/ui/contactUs/contactUs';
 import TabNav from '../../imports/ui/tabNav/tabNav';
 import Form from '../../imports/ui/form/form';
+import Plans from '../../imports/ui/myPlans/myPlans';
+import Profile from '../../imports/ui/profile/profile';
 
 export const Main = observer(React.createClass({
   displayName: "Main",
@@ -33,10 +34,10 @@ export const Main = observer(React.createClass({
         content = <Form />
         break;
       case 2:
-        content = <ContactUsForm />
+        content = <Plans />
         break;
       case 3:
-        content = <HandleLogout />
+        content = <Profile />
         break;
       default:
     }

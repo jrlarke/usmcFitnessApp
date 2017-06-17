@@ -1,8 +1,6 @@
 import React from 'react';
 import FormState from './state'
 import GeneralState from '../general/state'
-import TextField from 'material-ui/TextField';
-import RaisedButton from 'material-ui/RaisedButton';
 import { Center, Page, Box, VBox, ScrollView} from 'react-layout-components';
 import { observer } from 'mobx-react'
 
